@@ -30,3 +30,8 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+/agent
+/configs/gmail-credentials.json
+/configs/token.json
+/configs/config.yaml
+/configs/prompts.yaml
