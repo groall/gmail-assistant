@@ -31,10 +31,14 @@ go.work.sum
 # .idea/
 # .vscode/
 /agent
-/configs/gmail-credentials.json
-/configs/token.json
-/configs/config.yaml
-/configs/prompts.yaml
+/python-version/configs/gmail-credentials.json
+/python-version/configs/token.json
+/python-version/configs/config.yaml
+/python-version/configs/prompts.yaml
+/go-version/configs/gmail-credentials.json
+/go-version/configs/token.json
+/go-version/configs/config.yaml
+/go-version/configs/prompts.yaml
 
 .idea/
 .vscode/

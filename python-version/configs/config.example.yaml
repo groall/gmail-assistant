@@ -1,0 +1,39 @@
+# Configuration file for Gmail Local Agent
+# This file contains API credentials and other settings
+
+# API Credentials
+credentials:
+  openai_api_key: "test"        # Your OpenAI API key
+  telegram_bot_token: "830123120:AAHruLvTG_ly-e2JU2RP412wrw2wPNdRc123yLVCw"    # Your Telegram bot token from BotFather
+  telegram_chat_id: "12493464"      # Your Telegram chat ID to receive notifications
+
+# File paths
+files:
+  credentials_file: "configs/gmail-credentials.json"  # Gmail OAuth credentials from Google Cloud Console
+  token_file: "configs/token.json"              # Where OAuth token will be cached
+  prompts_file: "configs/prompts.yaml"          # Prompts configuration file
+
+# Polling settings
+polling:
+  interval_seconds: 60  # How often to check for new emails
+
+# OpenAI settings
+openai:
+#  endpoint: "http://host.docker.internal:1234/v1/chat/completions"
+  endpoint: "http://localhost:1234/v1/chat/completions"
+  #  endpoint: "https://api.openai.com/v1/chat/completions"
+  #  model: "gpt-4o-mini"  # Change if you prefer another model
+  model: "openai/gpt-oss-20b"
+  max_tokens: 200
+  temperature: 0
+
+# Telegram settings
+telegram:
+  important_email_template: |
+    📧 *Important email*
+    From: %s
+    Subject: %s
+
+    Summary: %s
+
+    Reason: %s
