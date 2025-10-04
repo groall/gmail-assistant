@@ -35,3 +35,7 @@ go.work.sum
 /configs/token.json
 /configs/config.yaml
 /configs/prompts.yaml
+
+.idea/
+.vscode/
+
