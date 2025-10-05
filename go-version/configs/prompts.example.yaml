@@ -23,12 +23,3 @@ email_classification:
     Email:
     %s
 
-telegram:
-  important_email_template: |
-    📧 *Important email*
-    From: %s
-    Subject: %s
-
-    Summary: %s
-
-    Reason: %s

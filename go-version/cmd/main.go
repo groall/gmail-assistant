@@ -35,10 +35,10 @@ import (
 
 	"google.golang.org/api/gmail/v1"
 
-	"gmail-local-agent/pkg/classifier"
-	cmdConfig "gmail-local-agent/pkg/config"
-	gmail2 "gmail-local-agent/pkg/gmail"
-	"gmail-local-agent/pkg/telegram"
+	"gmail-local-agent/go-version/pkg/classifier"
+	cmdConfig "gmail-local-agent/go-version/pkg/config"
+	gmail2 "gmail-local-agent/go-version/pkg/gmail"
+	"gmail-local-agent/go-version/pkg/telegram"
 )
 
 const configFile = "configs/config.yaml" // main configuration file

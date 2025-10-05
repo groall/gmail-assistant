@@ -26,3 +26,13 @@ openai:
   model: "openai/gpt-oss-20b"
   max_tokens: 200
   temperature: 0
+
+telegram:
+  important_email_template: |
+    📧 *Important email*
+    From: %s
+    Subject: %s
+
+    Summary: %s
+
+    Reason: %s
